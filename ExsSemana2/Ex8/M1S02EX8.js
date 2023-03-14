@@ -5,10 +5,9 @@ function buttonAdd() {
   var ultimoValor = parseInt(ultimoCampo.querySelector(".product").value);
 
   if (ultimoValor === 0) {
-    add.innerHTML = "Você finalizou sua compra! ";
-    return;
+    return add.innerHTML = "Você finalizou sua compra! ";
   } else if (isNaN(ultimoValor)){
-    alert ("Digite 0 no último campo para encerrar!");
+    return alert ("Digite 0 no último campo para encerrar!");
   }
 
   var novoCampo = document.createElement("div");
